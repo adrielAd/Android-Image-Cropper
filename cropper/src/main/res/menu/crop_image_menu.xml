@@ -7,17 +7,17 @@
         android:icon="@drawable/crop_image_menu_rotate_left"
         android:title="@string/crop_image_menu_rotate_left"
         android:visible="false"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="always" />
     <item
         android:id="@+id/crop_image_menu_rotate_right"
         android:icon="@drawable/crop_image_menu_rotate_right"
         android:title="@string/crop_image_menu_rotate_right"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="always" />
     <item
         android:id="@+id/crop_image_menu_flip"
         android:icon="@drawable/crop_image_menu_flip"
         android:title="@string/crop_image_menu_flip"
-        app:showAsAction="ifRoom">
+        app:showAsAction="always">
         <menu>
             <item
                 android:id="@+id/crop_image_menu_flip_horizontally"
@@ -27,6 +27,12 @@
                 android:title="@string/crop_image_menu_flip_vertically"/>
         </menu>
     </item>
+
+    <item
+        android:id="@+id/crop_image_menu_cancel"
+        android:title="@string/crop_image_menu_cancel"
+        app:showAsAction="always" />
+
     <item
         android:id="@+id/crop_image_menu_crop"
         android:title="@string/crop_image_menu_crop"

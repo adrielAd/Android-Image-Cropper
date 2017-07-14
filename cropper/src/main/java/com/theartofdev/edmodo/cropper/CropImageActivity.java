@@ -154,6 +154,10 @@ public class CropImageActivity extends AppCompatActivity implements CropImageVie
             cropImage();
             return true;
         }
+        if (item.getItemId() == R.id.crop_image_menu_cancel) {
+            onBackPressed();
+            return true;
+        }
         if (item.getItemId() == R.id.crop_image_menu_rotate_left) {
             rotateImage(-mOptions.rotationDegrees);
             return true;
